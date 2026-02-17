@@ -1,0 +1,298 @@
+{
+  "definitions": [
+    {
+      "title": "Section",
+      "id": "section",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/section/v1/section",
+            "template": {
+              "model": "section",
+              "filter": "section"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Columns Section",
+      "id": "columns-section",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/section/v1/section",
+            "template": {
+              "model": "columns-section",
+              "filter": "account-section"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "section",
+      "fields": [
+        {
+          "component": "text",
+          "name": "name",
+          "label": "Section Name",
+          "description": "The label shown for this section in the Content Tree"
+        },
+        {
+          "component": "multiselect",
+          "name": "style",
+          "label": "Style",
+          "options": [
+            {
+              "name": "Highlight",
+              "value": "highlight"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "columns-section",
+      "fields": [
+        {
+          "component": "text",
+          "name": "name",
+          "label": "Section Name",
+          "description": "The label shown for this section in the Content Tree"
+        },
+        {
+          "component": "text",
+          "name": "column-width",
+          "label": "Column Width",
+          "value": "50%"
+        },
+        {
+          "component": "select",
+          "name": "gap",
+          "label": "Gap",
+          "options": [
+            {
+              "name": "Big",
+              "value": "Big"
+            },
+            {
+              "name": "Small",
+              "value": "Small"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "product-teaser",
+        "product-recommendations"
+      ]
+    },
+    {
+      "id": "enrichment-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "product-teaser",
+        "product-recommendations"
+      ]
+    },
+    {
+      "id": "plp-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "enrichment",
+        "product-teaser",
+        "product-recommendations",
+        "product-list-page"
+      ]
+    },
+    {
+      "id": "pdp-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "enrichment",
+        "product-details",
+        "product-teaser",
+        "product-recommendations"
+      ]
+    },
+    {
+      "id": "mini-cart-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "commerce-mini-cart"
+      ]
+    },
+    {
+      "id": "cart-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "commerce-cart",
+        "product-teaser",
+        "product-recommendations"
+      ]
+    },
+    {
+      "id": "order-details-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "commerce-order-header",
+        "commerce-order-status",
+        "commerce-shipping-status",
+        "commerce-customer-details",
+        "commerce-order-cost-summary",
+        "commerce-gift-options",
+        "commerce-order-product-list",
+        "commerce-order-returns",
+        "product-teaser",
+        "product-recommendations"
+      ]
+    },
+    {
+      "id": "checkout-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "commerce-checkout"
+      ]
+    },
+    {
+      "id": "search-order-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "commerce-search-order"
+      ]
+    },
+    {
+      "id": "search-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "product-list-page"
+      ]
+    },
+    {
+      "id": "login-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "commerce-login"
+      ]
+    },
+    {
+      "id": "forgot-password-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "commerce-forgot-password"
+      ]
+    },
+    {
+      "id": "create-account-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "commerce-create-account"
+      ]
+    },
+    {
+      "id": "account-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "commerce-account-sidebar",
+        "commerce-account-header",
+        "commerce-orders-list",
+        "commerce-addresses",
+        "commerce-customer-information",
+        "commerce-returns-list"
+      ]
+    },
+    {
+      "id": "orders-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "commerce-account-sidebar",
+        "commerce-orders-list"
+      ]
+    },
+    {
+      "id": "address-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "commerce-account-sidebar",
+        "commerce-addresses"
+      ]
+    },
+    {
+      "id": "returns-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "commerce-account-sidebar",
+        "commerce-returns-list"
+      ]
+    },
+    {
+      "id": "account-order-details-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "commerce-account-sidebar",
+        "commerce-order-header",
+        "commerce-order-status",
+        "commerce-shipping-status",
+        "commerce-customer-details",
+        "commerce-order-cost-summary",
+        "commerce-order-product-list",
+        "commerce-order-returns"
+      ]
+    },
+    {
+      "id": "order-status-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "commerce-search-order"
+      ]
+    },
+    {
+      "id": "return-details-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "commerce-return-header",
+        "commerce-order-status",
+        "commerce-shipping-status",
+        "commerce-customer-details",
+        "commerce-order-product-list"
+      ]
+    },
+    {
+      "id": "create-return-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "commerce-create-return"
+      ]
+    },
+    {
+      "id": "confirm-account-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "commerce-confirm-account"
+      ]
+    },
+    {
+      "id": "create-password-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "commerce-create-password"
+      ]
+    },
+    {
+      "id": "wishlist-section",
+      "components": [
+        {"...": "./_common-blocks.json"},
+        "commerce-wishlist"
+      ]
+    }
+  ]
+}

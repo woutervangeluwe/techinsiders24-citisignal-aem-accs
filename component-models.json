@@ -1,0 +1,801 @@
+[
+  {
+    "id": "image",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "imageAlt",
+        "label": "Alt Text"
+      }
+    ]
+  },
+  {
+    "id": "title",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "label": "Title Type",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "button",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "name": "linkText",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "name": "linkTitle",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "linkType",
+        "label": "Type",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "primary",
+            "value": "primary"
+          },
+          {
+            "name": "secondary",
+            "value": "secondary"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "section",
+    "fields": [
+      {
+        "component": "text",
+        "name": "name",
+        "label": "Section Name",
+        "description": "The label shown for this section in the Content Tree"
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Highlight",
+            "value": "highlight"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "columns-section",
+    "fields": [
+      {
+        "component": "text",
+        "name": "name",
+        "label": "Section Name",
+        "description": "The label shown for this section in the Content Tree"
+      },
+      {
+        "component": "text",
+        "name": "column-width",
+        "label": "Column Width",
+        "value": "50%"
+      },
+      {
+        "component": "select",
+        "name": "gap",
+        "label": "Gap",
+        "options": [
+          {
+            "name": "Big",
+            "value": "Big"
+          },
+          {
+            "name": "Small",
+            "value": "Small"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "columns",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "columns",
+        "value": "",
+        "label": "Columns"
+      },
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "rows",
+        "value": "",
+        "label": "Rows"
+      }
+    ]
+  },
+  {
+    "id": "commerce-account-header",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Account Header",
+        "value": "My Account"
+      }
+    ]
+  },
+  {
+    "id": "commerce-addresses",
+    "fields": [
+      {
+        "component": "boolean",
+        "name": "minified-view",
+        "label": "Minified View",
+        "value": false
+      }
+    ]
+  },
+  {
+    "id": "commerce-cart",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "start-shopping-url",
+        "label": "Start Shopping URL",
+        "description": "Link to the start shopping page"
+      },
+      {
+        "component": "aem-content",
+        "name": "checkout-url",
+        "label": "Checkout URL",
+        "description": "Link to Checkout page"
+      },
+      {
+        "component": "boolean",
+        "name": "hide-heading",
+        "label": "Hide Heading",
+        "description": "Hide the heading of the cart"
+      },
+      {
+        "component": "boolean",
+        "name": "hide-attributes",
+        "label": "Hide Attributes",
+        "description": "Hide the attributes of the cart"
+      },
+      {
+        "component": "boolean",
+        "name": "enable-item-quantity-update",
+        "label": "Enable Item Quantity Update",
+        "description": "Enable the ability to update the quantity of items in the cart"
+      },
+      {
+        "component": "boolean",
+        "name": "enable-item-remove",
+        "label": "Enable Item Remove",
+        "description": "Enable the ability to remove items from the cart"
+      },
+      {
+        "component": "boolean",
+        "name": "enable-estimate-shipping",
+        "label": "Enable Estimate Shipping",
+        "description": "Enable the ability to estimate shipping costs"
+      },
+      {
+        "component": "boolean",
+        "name": "undo-remove-item",
+        "label": "Enable Undo Remove Item",
+        "description": "Enable the ability to undo the removal of an item from the cart"
+      },
+      {
+        "component": "number",
+        "name": "max-items",
+        "label": "Max Items",
+        "description": "Maximum number of items to display in the cart"
+      }
+    ]
+  },
+  {
+    "id": "commerce-mini-cart",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "start-shopping-url",
+        "label": "Start Shopping URL",
+        "description": "Link to the start shopping page"
+      },
+      {
+        "component": "aem-content",
+        "name": "cart-url",
+        "label": "Cart URL",
+        "description": "Link to full shopping Cart"
+      },
+      {
+        "component": "aem-content",
+        "name": "checkout-url",
+        "label": "Checkout URL",
+        "description": "Link to Checkout page"
+      },
+      {
+        "component": "boolean",
+        "name": "enable-updating-product",
+        "label": "Enable Updating Product",
+        "description": "Enable Updating Product"
+      },
+      {
+        "component": "boolean",
+        "name": "undo-remove-item",
+        "label": "Enable Undo Remove Item",
+        "description": "Enable the ability to undo the removal of an item from the cart"
+      }
+    ]
+  },
+  {
+    "id": "commerce-orders-list",
+    "fields": [
+      {
+        "component": "boolean",
+        "name": "minified-view",
+        "label": "Minified View",
+        "value": false
+      }
+    ]
+  },
+  {
+    "id": "commerce-returns-list",
+    "fields": [
+      {
+        "component": "boolean",
+        "name": "minified-view",
+        "label": "Minified View",
+        "value": false
+      }
+    ]
+  },
+  {
+    "id": "commerce-wishlist",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "start-shopping-url",
+        "label": "Start Shopping URL",
+        "description": "Start Shopping URL"
+      }
+    ]
+  },
+  {
+    "id": "enrichment",
+    "fields": [
+      {
+        "component": "select",
+        "name": "type",
+        "label": "Type",
+        "description": "What enrichment type to match with",
+        "options": [
+          {
+            "name": "Product",
+            "value": "product"
+          },
+          {
+            "name": "Category",
+            "value": "category"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "position",
+        "label": "Position",
+        "description": "Position to match with",
+        "options": [
+          {
+            "name": "Below Product",
+            "value": "below-product"
+          },
+          {
+            "name": "Above Product",
+            "value": "above-product"
+          },
+          {
+            "name": "Below Category",
+            "value": "below-category"
+          },
+          {
+            "name": "Above Category",
+            "value": "above-category"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fragment",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
+      }
+    ]
+  },
+  {
+    "id": "hero",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "product-details",
+    "fields": []
+  },
+  {
+    "id": "product-list-page",
+    "fields": [
+      {
+        "component": "text",
+        "name": "urlPath",
+        "label": "URL Path",
+        "valueType": "string",
+        "description": "Current Category URL Path"
+      }
+    ]
+  },
+  {
+    "id": "product-recommendations",
+    "fields": [
+      {
+        "component": "text",
+        "name": "currentsku",
+        "label": "Current SKU",
+        "description": "Current SKU"
+      },
+      {
+        "component": "text",
+        "name": "recid",
+        "label": "Record ID",
+        "description": "Record ID",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "page-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "id": "enrichment-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "enrichment",
+        "readOnly": true
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title",
+        "valueType": "string",
+        "value": "",
+        "description": "Title of the enrichment"
+      },
+      {
+        "component": "text",
+        "name": "enrichment-products",
+        "label": "Product SKU's to match with",
+        "valueType": "string",
+        "multi": true
+      },
+      {
+        "component": "text",
+        "name": "enrichment-categories",
+        "label": "Product Categories to match with",
+        "valueType": "string",
+        "multi": true
+      },
+      {
+        "component": "text",
+        "name": "enrichment-positions",
+        "label": "Positions to match with",
+        "valueType": "string",
+        "multi": true
+      }
+    ]
+  },
+  {
+    "id": "pdp-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "pdp",
+        "readOnly": true
+      },
+      {
+        "component": "text",
+        "name": "sku",
+        "label": "SKU",
+        "valueType": "string",
+        "description": "Set SKU of the product if value is case sensitive"
+      }
+    ]
+  },
+  {
+    "id": "order-details-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "order-details",
+        "readOnly": true
+      }
+    ]
+  },
+  {
+    "id": "plp-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "plp",
+        "readOnly": true
+      }
+    ]
+  },
+  {
+    "id": "cart-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "cart",
+        "readOnly": true
+      }
+    ]
+  },
+  {
+    "id": "mini-cart-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "mini-cart",
+        "readOnly": true
+      }
+    ]
+  },
+  {
+    "id": "checkout-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "checkout",
+        "readOnly": true
+      }
+    ]
+  },
+  {
+    "id": "search-order-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "search-order",
+        "readOnly": true
+      }
+    ]
+  },
+  {
+    "id": "search-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "search",
+        "readOnly": true
+      }
+    ]
+  },
+  {
+    "id": "login-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "login",
+        "readOnly": true
+      }
+    ]
+  },
+  {
+    "id": "forgot-password-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "forgot-password",
+        "readOnly": true
+      }
+    ]
+  },
+  {
+    "id": "create-account-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "create-account",
+        "readOnly": true
+      }
+    ]
+  },
+  {
+    "id": "account-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "account",
+        "readOnly": true
+      }
+    ]
+  },
+  {
+    "id": "orders-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "orders",
+        "readOnly": true
+      }
+    ]
+  },
+  {
+    "id": "address-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "address",
+        "readOnly": true
+      }
+    ]
+  },
+  {
+    "id": "returns-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "returns",
+        "readOnly": true
+      }
+    ]
+  },
+  {
+    "id": "account-order-details-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "account-order-details",
+        "readOnly": true
+      }
+    ]
+  },
+  {
+    "id": "order-status-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "order-status",
+        "readOnly": true
+      }
+    ]
+  },
+  {
+    "id": "return-details-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "return-details",
+        "readOnly": true
+      }
+    ]
+  },
+  {
+    "id": "create-return-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "create-return",
+        "readOnly": true
+      }
+    ]
+  },
+  {
+    "id": "confirm-account-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "confirm-account",
+        "readOnly": true
+      }
+    ]
+  },
+  {
+    "id": "create-password-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "create-password",
+        "readOnly": true
+      }
+    ]
+  },
+  {
+    "id": "wishlist-metadata",
+    "fields": [
+      {
+        "component": "text",
+        "name": "template",
+        "label": "Template",
+        "valueType": "string",
+        "value": "wishlist",
+        "readOnly": true
+      }
+    ]
+  }
+]

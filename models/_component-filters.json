@@ -1,0 +1,20 @@
+[
+  {
+    "id": "main",
+    "components": [
+      "section"
+    ]
+  },
+  {
+    "id": "columns-main",
+    "components": [
+      "columns-section"
+    ]
+  },
+  {
+    "...": "./_section.json#/filters"
+  },
+  {
+    "...": "../blocks/*/_*.json#/filters"
+  }
+]
