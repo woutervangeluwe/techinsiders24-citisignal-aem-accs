@@ -4,9 +4,11 @@
     "/content/CitiSignal/configuration:/.helix/config.json",
     "/content/CitiSignal/headers:/.helix/headers.json",
     "/content/CitiSignal/metadata:/metadata.json",
-    "/content/CitiSignal.resource/enrichment/enrichment.json:/enrichment/enrichment.json"
+    "/content/CitiSignal.resource/enrichment/enrichment.json:/enrichment/enrichment.json",
+    "/content/forms/af/:/forms/"
   ],
   "includes": [
-    "/content/CitiSignal/"
+    "/content/CitiSignal/",
+    "/content/forms/af/"
   ]
 }
