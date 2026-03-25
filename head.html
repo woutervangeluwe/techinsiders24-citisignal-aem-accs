@@ -40,8 +40,8 @@
         import('/scripts/__dropins__/tools/shims/importmap.js');
     }
 </script>
-<script src="/scripts/styleconfigurations.js"></script>
-<script>
+<script nonce="aem" src="/scripts/styleconfigurations.js"></script>
+<script nonce="aem">
     !function (n, o) {
       o.forEach(function (o) {
         n[o] || ((n.__alloyNS = n.__alloyNS ||
@@ -55,9 +55,9 @@
     </script>
 
 
-<script src="/scripts/alloy.js"></script>
+<script nonce="aem" src="/scripts/alloy.js"></script>
 
-<script>
+<script nonce="aem">
     alloy("configure", {
         defaultConsent: "in",
         edgeDomain: "edge.adobedc.net",
