@@ -40,7 +40,50 @@
         import('/scripts/__dropins__/tools/shims/importmap.js');
     }
 </script>
+<script src="/scripts/styleconfigurations.js"></script>
+<script>
+    !function (n, o) {
+      o.forEach(function (o) {
+        n[o] || ((n.__alloyNS = n.__alloyNS ||
+          []).push(o), n[o] = function () {
+            var u = arguments; return new Promise(
+              function (i, l) { n[o].q.push([i, l, u]) })
+          }, n[o].q = [])
+      })
+    }
+      (window, ["alloy"]);
+    </script>
 
+
+<script src="/scripts/alloy.js"></script>
+
+<script>
+    alloy("configure", {
+        defaultConsent: "in",
+        edgeDomain: "edge.adobedc.net",
+        edgeBasePath: "ee",
+        datastreamId: "3bb58098-1106-40bb-9ded-06780b13a970", // replace datastreamId
+        orgId: "907075E95BF479EC0A495C73@AdobeOrg", // replace ims org Id
+        debugEnabled: true,
+        idMigrationEnabled: false,
+        thirdPartyCookiesEnabled: false,
+        prehidingStyle: ".personalization-container { opacity: 0 !important }",
+    });
+
+window["alloy"]("sendEvent", {
+    conversation: {
+        fetchConversationalExperience: true
+    }
+}).then(result => {
+    console.log("Conversation experience fetched", result);
+    window["alloy"]("bootstrapConversationalExperience", {
+        selector: "#brand-concierge-mount",
+        src: "/scripts/brandconciergemain.js",
+        stylingConfigurations: window.styleConfiguration,
+        stickySession: true // create a sticky session cookie with expiration
+    })
+});
+</script>
 <script nonce="aem" src="/scripts/aem.js" type="module"></script>
 <script nonce="aem" src="/scripts/scripts.js" type="module"></script>
 <script nonce="aem" src="/scripts/commerce.js" type="module"></script>
