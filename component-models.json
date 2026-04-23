@@ -5514,31 +5514,5 @@
         "readOnly": true
       }
     ]
-  },
-  {
-    "id": "fiberoffer",
-    "fields": [
-      {
-        "component": "richtext",
-        "name": "offerText",
-        "value": "",
-        "label": "Offer Text",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "offerCallToAction",
-        "label": "Offer CTA",
-        "value": ""
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "offerImage",
-        "label": "Offer Image",
-          "multi": false
-      }
-    ]
   }
 ]
